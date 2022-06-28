@@ -20,19 +20,20 @@
     }
   }
   &__title {
-    @extend %textStyle;
-    $lh: 1.14;
-    $ls: $letter-spacing;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: $letter-spacing;
     color: $main-text-color;
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: auto;
   }
   &__text {
-    $fw: 400;
-    $fs: 14px;
-    $lh: 1.71;
-    $ls: $letter-spacing;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: $letter-spacing;
     color: $secondary-text-color;
     width: 270px;
   }

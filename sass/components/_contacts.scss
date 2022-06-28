@@ -4,17 +4,17 @@
 
 .contacts__list--footer {
   color: $white-color;
-  $fw: 400;
-  $lh: 1.71;
+  font-weight: 400;
+  line-height: 1.71;
   display: block;
 }
 
 .contacts__list--header {
   text-align: center;
   @extend %align-list;
-  $fw: 600;
-  $lh: 1.14;
-  $ls: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .contacts__item--footer:not(:last-child) {
@@ -63,48 +63,50 @@
       fill: $accent-color;
     }
   }
+}
 
-  // .tel__icon {
-  //   margin-right: 10px;
-  //   fill: $secondary-text-color;
-  //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  // }
+.tel__icon {
+  margin-right: 10px;
+  fill: $secondary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  .mail__link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      color: $accent-color;
-      text-decoration: none;
-    }
+.mail__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    text-decoration: none;
   }
-  .mail__link--footer {
-    display: block;
-    font-style: normal;
-    color: $white-color;
-  }
-  .mail__link--header {
-    @extend %align-list;
-    color: $secondary-text-color;
-    &:hover,
-    &:focus {
-      .mail__icon {
-        fill: $accent-color;
-      }
-    }
-  }
+}
 
-  // .mail__icon {
-  //   margin-right: 10px;
-  //   fill: $secondary-text-color;
-  //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  // }
+.mail__link--footer {
+  display: block;
+  font-style: normal;
+  color: $white-color;
+}
 
-  @each $symbol in tel, mail {
-    .#{$symbol}__icon {
-      margin-right: 10px;
-      fill: $secondary-text-color;
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.mail__link--header {
+  @extend %align-list;
+  color: $secondary-text-color;
+  &:hover,
+  &:focus {
+    .mail__icon {
+      fill: $accent-color;
     }
   }
 }
+
+.mail__icon {
+  margin-right: 10px;
+  fill: $secondary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// @each $symbol in tel, mail {
+//   .#{$symbol}__icon {
+//     margin-right: 10px;
+//     fill: $secondary-text-color;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }

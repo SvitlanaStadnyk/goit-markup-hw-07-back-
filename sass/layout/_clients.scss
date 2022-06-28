@@ -1,9 +1,9 @@
 .clients {
   &__title {
-    $fw: 700;
-    $fs: 36px;
-    $lh: 1.16;
-    $ls: $letter-spacing;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: $letter-spacing;
     color: $main-text-color;
     text-align: center;
     margin-bottom: 50px;

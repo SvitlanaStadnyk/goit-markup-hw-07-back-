@@ -15,10 +15,10 @@
   background-color: rgba(33, 150, 243, 0.9);
   top: 0;
   left: 0;
-  $fw: 400;
-  $fs: 18px;
-  $lh: 1.55;
-  $letter-spacing: $letter-spacing;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: $letter-spacing;
   width: 100%;
   height: 100%;
   padding: 63px 24px;
@@ -53,49 +53,96 @@
     background-color: $white-color;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
-    &:hover,
-    &:focus {
-      &__content {
-        transform: translateY(0);
-        opacity: 1;
-      }
-      &__image {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  }
-
-  .link {
-    text-decoration: none;
   }
 }
 
+.project__link:hover .project__content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project__link:hover .project__image {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project__link:focus .project__content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project__link:focus .project__image {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project__link.link {
+  text-decoration: none;
+}
+
+// .project__title {
+//   color: var(--main-text-color);
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 2;
+//   letter-spacing: 0.06em;
+//   padding-bottom: 4px;
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     background-color: var(--white-color);
+//   }
+// }
+// .project__description {
+//   color: var(--secondary-text-color);
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.87;
+//   letter-spacing: var(--letter-spacing);
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     background-color: var(--white-color);
+//   }
+// }
+
 .project__title {
-  color: var(--main-text-color);
-  $fw: 700;
-  $fs: 18px;
-  $lh: 2;
-  $ls: 0.06em;
+  color: $main-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   padding-bottom: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: var(--white-color);
+    background-color: $white-color;
   }
 }
+
+// .project__title:hover,
+// .project__title:focus {
+//   background-color: $white-color;
+// }
+
 .project__description {
-  color: var(--secondary-text-color);
-  $fw: 400;
-  $fs: 16px;
-  $lh: 1.87;
-  $ls: var(--letter-spacing);
+  color: $secondary-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: $letter-spacing;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: var(--white-color);
+    background-color: $white-color;
   }
 }
+
+// .project__description:hover,
+// .project__description:focus {
+//   background-color: $white-color;
+// }
+
 .project__text {
   border-right-width: 1px;
   border-right-style: solid;

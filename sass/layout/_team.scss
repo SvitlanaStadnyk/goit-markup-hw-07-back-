@@ -16,10 +16,10 @@
     }
   }
   &__title {
-    $fw: 700;
-    $fs: 36px;
-    $lh: 1.16;
-    $letter-spacing: $letter-spacing;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: $letter-spacing;
     color: $main-text-color;
     text-align: center;
     margin-bottom: 50px;
@@ -29,19 +29,19 @@
     padding-bottom: 30px;
   }
   &__name {
-    $fw: 500;
-    $fs: 16px;
-    $lh: 1.19;
-    $letter-spacing: $letter-spacing;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: $letter-spacing;
     color: $main-text-color;
     margin-bottom: 10px;
     text-align: center;
   }
   &__description {
-    $fw: 400;
-    $fs: 16px;
-    $lh: 1.19;
-    $ls: $letter-spacing;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: $letter-spacing;
     color: $secondary-text-color;
     text-align: center;
     margin-bottom: 16px;

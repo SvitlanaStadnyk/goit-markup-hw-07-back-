@@ -17,10 +17,10 @@
     flex-direction: column;
   }
   &__title {
-    $fw: 900;
-    $fs: 44px;
-    $lh: 1.36;
-    $letter-spacing: 0.06em;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
     color: $white-color;
     text-transform: uppercase;
     text-align: center;
@@ -31,9 +31,9 @@
   &__btn {
     color: $white-color;
     background-color: $accent-color;
-    $fw: 700;
-    $lh: 1.88em;
-    $letter-spacing: 0.06em;
+    font-weight: 700;
+    line-height: 1.88em;
+    letter-spacing: 0.06em;
     padding: 10px 32px;
     width: fit-content;
     margin: 0 auto;

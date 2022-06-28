@@ -1,8 +1,8 @@
 .logo {
   font-family: 'Raleway', sans-serif;
-  $fw: 700;
-  $fs: 26px;
-  $lh: 1.19;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   display: block;
 }
 .logo-part {
@@ -22,7 +22,7 @@
 
 .logo--dark {
   color: $black-color;
-  $ls: $letter-spacing;
+  letter-spacing: $letter-spacing;
   align-items: center;
   margin-right: 50px;
 }
