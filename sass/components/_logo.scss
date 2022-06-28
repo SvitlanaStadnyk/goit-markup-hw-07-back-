@@ -1,0 +1,28 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  $fw: 700;
+  $fs: 26px;
+  $lh: 1.19;
+  display: block;
+}
+.logo-part {
+  color: $accent-color;
+}
+
+.logo--light {
+  color: $white-color;
+  font-style: normal;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.logo-part--light {
+  font-style: normal;
+}
+
+.logo--dark {
+  color: $black-color;
+  $ls: $letter-spacing;
+  align-items: center;
+  margin-right: 50px;
+}

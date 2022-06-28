@@ -1,0 +1,39 @@
+.features {
+  background-color: $white-color;
+  padding-bottom: 0px;
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+  &__image {
+    @extend %align-list;
+    justify-content: center;
+    border-radius: 4px;
+    height: 120px;
+    background-color: rgba(245, 244, 250, 1);
+    margin-bottom: 30px;
+  }
+  &__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__title {
+    @extend %textStyle;
+    $lh: 1.14;
+    $ls: $letter-spacing;
+    color: $main-text-color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: auto;
+  }
+  &__text {
+    $fw: 400;
+    $fs: 14px;
+    $lh: 1.71;
+    $ls: $letter-spacing;
+    color: $secondary-text-color;
+    width: 270px;
+  }
+}
