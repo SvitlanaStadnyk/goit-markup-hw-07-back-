@@ -300,6 +300,16 @@ img {
   fill: #ffffff;
 }
 
+.socials__link:hover .socials_icon,
+.socials__link:focus .socials_icon {
+  fill: #ffffff;
+}
+
+.socials__icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .socials__list--dark {
   justify-content: left;
 }
@@ -372,10 +382,10 @@ img {
 }
 
 .contacts__list--header {
-  text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .contacts__item--footer:not(:last-child) {
@@ -689,7 +699,7 @@ img {
 .filters {
   background-color: #ffffff;
   color: #212121;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -811,9 +821,7 @@ img {
   padding-bottom: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.project__title:hover,
-.project__title:focus {
+.project__title:hover, .project__title:focus {
   background-color: #ffffff;
 }
 
@@ -825,9 +833,7 @@ img {
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.project__description:hover,
-.project__description:focus {
+.project__description:hover, .project__description:focus {
   background-color: #ffffff;
 }
 

@@ -10,11 +10,11 @@
 }
 
 .contacts__list--header {
-  text-align: center;
-  @extend %align-list;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-align: center;
+  @extend %align-list;
 }
 
 .contacts__item--footer:not(:last-child) {
